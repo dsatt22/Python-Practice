@@ -104,13 +104,86 @@
 
 
 ## Letting the User Choose When to Quit ##
-prompt = "\nTell me something, and I will repeat it back to you: "
-prompt += "\nEnter 'quit' to end the program. "
-message = ""
-while message != 'quit': 
-    message = input(prompt)
+#prompt = "\nTell me something, and I will repeat it back to you: "
+#prompt += "\nEnter 'quit' to end the program. "
+#message = ""
+#while message != 'quit': 
+#    message = input(prompt)
 #    print(message)
 
 ## We don't want Python to print 'quit' once it is entered, so here is a quick fix for that
-    if message != 'quit':
-        print(message)
+#    if message != 'quit':
+#        print(message)
+
+
+## Using a Flag ##
+
+#prompt = "\nTell me something, and I will repeat it back to you: "
+#prompt += "\nEnter 'quit' to end the program. "
+
+#active = True
+#while active: 
+#    message = input(prompt)
+
+#    if message == 'quit':
+#        active = False
+#    else:
+#        print(message)
+
+
+## Using break to Exit a Loop
+#prompt = "\nPlease enter the name of a city you have visited:"
+#prompt += "\n(Enter 'quit' when you are finished.) "
+
+#while True:
+#    city = input(prompt)
+    
+#    if city == 'quit':
+#        break
+#    else:
+#        print(f"I'd love to go to {city.title()}!")   
+
+
+## Using continue in a Loop
+
+#current_number = 0
+#while current_number < 10:
+#    current_number += 1
+#    if current_number % 2 == 0:
+#        continue
+    
+#    print(current_number)
+
+
+#========================= PRACTICE PROBLEMS ============================
+
+# 1) Write a loop that prompts the user to enter a series of pizza toppings until they enter a 'quit' value. As they enter each topping, print a message saying you'll add that topping to their pizza.
+
+#prompt = "\nEnter what toppings you want to add to your pizza:"
+#prompt += "\n(Enter 'quit' when you are finished.) "
+
+#while True:
+#    topping = input(prompt)
+
+#    if topping == 'quit':
+#        break
+#    else:
+#        print(f"Adding {topping} to your pizza.")
+
+
+# 2) A movie theater charges different ticket prices depending on a person's age. If a person is under the age of 3, the ticket is free; if they are between 3 and 12, the ticket is $10; and if they are over age 12, the ticket is $15. Write a loop in which you ask users their age, and then tell them the cost of their movie ticket. 
+
+movie_tickets = input("How old are you? ")
+age = int(movie_tickets)
+
+while True:
+    age = input(age)
+
+    if age == 'quit':
+         break
+    elif age < 3:
+        print("Your ticket is free!")
+    elif age < 12:
+        print("Your tickets are $10")
+    else:
+        print("Your ticket is $15")
