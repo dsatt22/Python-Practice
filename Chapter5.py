@@ -18,7 +18,7 @@
 #print(car == 'bmw')
 
 #car = 'Audi'
-#print(car == 'audi')
+#print(car == 'audi') # This results in False since 'Audi' != 'audi'. Case sensitive 
 #print(car.lower() == 'audi') # This results in True. This says that the lower case of 'Audi' is the same
 
 
@@ -50,7 +50,7 @@
 #print(age_0 >= 21 or age_1 >= 21)
 
 
-# Use 'IN' to check whether a Value is in a  List
+# Use 'IN' to check whether a Value is in a List
 #requested_toppings = ['mushrooms', 'onions', 'pinnapple']
 #print('mushrooms' in requested_toppings)
 #print('pepperoni' in requested_toppings)
@@ -83,7 +83,7 @@
 # IF-ELIF-ELSE statements
 
 # First way to write if-elif-else statement
-#age = 12
+#age = 18
 #if age < 4:
 #    print("Your admission cost is $0")
 #elif age < 18:
@@ -250,25 +250,25 @@
 #    print(" We need to find some users!")
 
 # 3) Create a program that simulates how websites ensure that everyone has a unique username
-current_users = ['John', 'Susan', 'Steve', 'Aaron', 'Lisa']
-new_users = ['kevin', 'jared', 'john', 'carol', 'susan']
+#current_users = ['John', 'Susan', 'Steve', 'Aaron', 'Lisa']
+#new_users = ['Kevin', 'Jared', 'John', 'Carol', 'Susan']
 
 
-for new_user in new_users:
-    if new_user in current_users:
-        print(f"Sorry,  is in use. Please enter a new username.")
-    else:
-        print("That username is available.")
+#for new_user in new_users:
+#    if new_user in current_users:
+#        print(f"Sorry, {new_user} is in use. Please enter a new username.")
+#    else:
+#        print("That username is available.")
 
 # 4) IF-ELIF-ELSE statement for ordinal numbers (loop through them)
-#ordinal_numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+ordinal_numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9]
 
-#for ordinal_number in ordinal_numbers:
-#    if ordinal_number == 1:
-#        print(f"\n{ordinal_number}st")
-#    elif ordinal_number == 2:
-#        print(f"\n{ordinal_number}nd")
-#    elif ordinal_number == 3:
-#        print(f"\n{ordinal_number}rd")
-#    else:
-#        print(f"\n{ordinal_number}th")
+for ordinal_number in ordinal_numbers:
+    if ordinal_number == 1:
+        print(f"\n{ordinal_number}st")
+    elif ordinal_number == 2:
+        print(f"\n{ordinal_number}nd")
+    elif ordinal_number == 3:
+        print(f"\n{ordinal_number}rd")
+    else:
+        print(f"\n{ordinal_number}th")
