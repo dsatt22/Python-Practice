@@ -2,10 +2,10 @@
 
 # A Simple Dictionary
 
-#alien_0 = {'color': 'green', 'points': 5}
+alien_0 = {'color': 'green', 'points': 5}
 
 #print(alien_0['color'])
-#print(alien_0['points'])
+print(alien_0['points'])
 
 
 # Working with Dictionaries
@@ -13,7 +13,7 @@
     # Each 'key' is connected to a 'value'.
     # Use the 'key' to access the 'value' associated with it.
     # In Python, a dictionary is wrapped in braces {}
-    # Every 'key' is connected to its value by a colon (;),
+    # Every 'key' is connected to its value by a colon (:),
     # Individual key-value pairs are separated by commas (,)
 
 #new_points = alien_0['points']
